@@ -18,3 +18,9 @@ Bước 3: Thực hiện chạy theo chương trình
 cd fabbanhk
 
 ./startFabric.sh
+
+Bước 4: Khởi động API
+
+node server.js
+
+End.
