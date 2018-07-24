@@ -1,0 +1,128 @@
+.create-bank {
+    padding: 115px;
+    background-image: url('../images/bg.png');
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    padding: 50px 15px 200px;
+    .content {
+        background: #d5d5d5;
+        width: 370px;
+        color: #fff;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, .8);
+        margin: auto;
+        border-radius: 5px
+    }
+    .head {
+        text-align: center;
+        padding: 10px;
+        background: #364351;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        h4 {
+            margin: 0;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
+    .body {
+        .form {
+            padding: 20px;
+            .item {
+                input {
+                    color: #000;
+                    transition: all .5s;
+                    &::placeholder {
+                        font-style: normal;
+                        font-size: 14px;
+                        color: #868e93;
+                    }
+                    &:focus {
+                        box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 0.3);
+                    }
+                }
+                .status {
+                    display: block;
+                }
+                .bg {
+                    background: #fff;
+                    margin-bottom: 10px;
+                    border-radius: 4px;
+                    padding: 10px;
+                    label {
+                        color: #868e93;
+                        font-weight: normal;
+                    }
+                    .borrow {
+                        box-shadow: none;
+                        border-radius: 100%;
+                        margin-right: 2px;
+                        border: none;
+                        background: transparent;
+                        cursor: pointer;
+                        position: absolute;
+                        outline: none;
+                        &[type=radio] {
+                            box-shadow: none;
+                        }
+                    }
+                    .borrow_ {
+                        margin-right: 30px;
+                        margin-bottom: 0;
+                        cursor: pointer;
+                        padding-left: 20px;
+                    }
+                }
+
+                textarea {
+                    color: #000;
+                    padding-left: 10px;
+                    &::placeholder {
+                        color: #868e93;
+                        font-style: normal;
+                    }
+                }
+                .btn {
+                    background: #5c8ca7;
+                    border-radius: 0;
+                    display: table;
+                    margin: auto;
+                    color: #fff;
+                    padding: 0;
+                    &:hover {
+                        background: #2980b9;
+                    }
+                    &:focus {
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .create-bank {
+        .content {
+            width: unset;
+            max-width: 500px;
+        }
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .create-bank {
+        .body {
+            .form {
+                .item {
+                    .bg {
+                        .borrow_ {
+                            display: block;
+                            margin-bottom: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
