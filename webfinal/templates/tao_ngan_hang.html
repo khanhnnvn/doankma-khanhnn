@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>office</title>
+    <link rel="stylesheet" href="../static/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+    <link rel="stylesheet" href="../static/css/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="main-header">
+            <div class="bs-container">
+                <div class="banner">
+                    <div class="img"> 
+                        <div class="ImagesFrame">
+                            <div class="ImagesFrameCrop0">
+                                <img src="../static/images/hoc-vien-mat-ma.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="bs-container">
+            <section class="create-bank">
+                <div class="content">
+                    <div class="head">
+                        <h4 class="title">TẠO NGÂN HÀNG</h4>
+                    </div>
+                    <div class="body">
+                        <form class="form" action="/createBank" method="POST">
+                            <div class="item">
+                                <input type="text" name="bankname" placeholder="Tên ngân hàng" required>
+                                <input type="text" name="fullbankname" placeholder="Tên đầy đủ" required>
+                                <input class="btn" type="submit" name="" value="TẠO NGÂN HÀNG">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="../static/js/jquery-3.2.1.js"></script>
+    <script>
+    function loadImages() {
+        $(".ImagesFrameCrop").each(function() {
+            $(this).removeClass("wide")
+            $(this).removeClass("tall")
+            if ($(this).width() / $(this).height() > $(this).parent().width() / $(this).parent().height()) {
+                $(this).addClass("wide");
+            } else {
+                $(this).addClass("tall");
+            }
+        });
+        $(".ImagesFrameCrop").children("img").each(function() {
+            $(this).removeClass("wide")
+            $(this).removeClass("tall")
+            if ($(this).width() / $(this).height() > $(this).parent().width() / $(this).parent().height()) {
+                $(this).addClass("wide");
+            } else {
+                $(this).addClass("tall");
+            }
+        });
+
+        $(".ImagesFrameCrop1").each(function() {
+            $(this).removeClass("wide")
+            $(this).removeClass("tall")
+            if ($(this).width() / $(this).height() > $(this).parent().width() / $(this).parent().height()) {
+                $(this).addClass("wide");
+            } else {
+                $(this).addClass("tall");
+            }
+        });
+        $(".ImagesFrameCrop1").children("img").each(function() {
+            $(this).removeClass("wide")
+            $(this).removeClass("tall")
+            if ($(this).width() / $(this).height() > $(this).parent().width() / $(this).parent().height()) {
+                $(this).addClass("wide");
+            } else {
+                $(this).addClass("tall");
+            }
+        });
+
+        $(".ImagesFrameCrop0").each(function() {
+            $(this).removeClass("wide")
+            $(this).removeClass("tall")
+            if ($(this).width() / $(this).height() > $(this).parent().width() / $(this).parent().height()) {
+                $(this).addClass("wide");
+            } else {
+                $(this).addClass("tall");
+            }
+        });
+        $(".ImagesFrameCrop0").children("img").each(function() {
+            $(this).removeClass("wide")
+            $(this).removeClass("tall")
+            if ($(this).width() / $(this).height() > $(this).parent().width() / $(this).parent().height()) {
+                $(this).addClass("wide");
+            } else {
+                $(this).addClass("tall");
+            }
+        });
+    }
+    loadImages();
+    </script>
+</body>
+
+</html>

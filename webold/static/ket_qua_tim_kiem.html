@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>office</title>
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="main-header">
+            <div class="bs-container">
+                <div class="banner">
+                    <div class="img">
+                        <div class="ImagesFrame">
+                            <div class="ImagesFrameCrop0">
+                                <img src="images/hoc-vien-mat-ma.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="bs-container">
+            <section class="create-bank">
+                <div class="content content-search">
+                    <div class="head">
+                        <h4 class="title">KẾT QUẢ TÌM KIẾM</h4>
+                    </div>
+                    <div class="body">
+                        <div class="item">
+                            <div class="content-item">
+                                <div class="bs-row bs-row-sm15">
+                                    <div class="bs-col sm-50-15">
+                                        <div class="item_">
+                                            <p class="title">Số CMT/ Hộ Chiếu: <span class="cont">111903752</span></p>
+                                        </div>
+                                        <div class="item_">
+                                            <p class="title">Họ và tên: <span class="cont">Nguyễn Ngọc Khánh</span></p>
+                                        </div>
+                                        <div class="item_">
+                                            <p class="title">Chỗ ở hiện nay: <span class="cont">Phú Diễn, Từ Liêm, Hà Nội</span></p>
+                                        </div>
+                                        <div class="item_">
+                                            <p class="title">Quê quán: <span class="cont">Mỹ Đức, Hà Nội</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="bs-col sm-50-15">
+                                        <div class="item_">
+                                            <p class="title">Hộ khẩu: <span class="cont">Đội 1, thôn Tế Tiêu, Mỹ Đức Hà Nội</span></p>
+                                        </div>
+                                        <div class="item_">
+                                            <p class="title">Tình trạng hồ sơ: <span class="cont">Đang vay vốn</span></p>
+                                        </div>
+                                        <div class="item_">
+                                            <p class="title">Mô tả chi tiết: <span class="cont">Hồ sơ đang có hiệu lực</span></p>
+                                        </div>
+                                        <div class="item_">
+                                            <p class="title">Ngân hàng vay: <span class="cont">BIDV</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script>
+    function loadImages() {
+        $(".ImagesFrameCrop").each(function() {
+            $(this).removeClass("wide")
+            $(this).removeClass("tall")
+            if ($(this).width() / $(this).height() > $(this).parent().width() / $(this).parent().height()) {
+                $(this).addClass("wide");
+            } else {
+                $(this).addClass("tall");
+            }
+        });
+        $(".ImagesFrameCrop").children("img").each(function() {
+            $(this).removeClass("wide")
+            $(this).removeClass("tall")
+            if ($(this).width() / $(this).height() > $(this).parent().width() / $(this).parent().height()) {
+                $(this).addClass("wide");
+            } else {
+                $(this).addClass("tall");
+            }
+        });
+
+        $(".ImagesFrameCrop1").each(function() {
+            $(this).removeClass("wide")
+            $(this).removeClass("tall")
+            if ($(this).width() / $(this).height() > $(this).parent().width() / $(this).parent().height()) {
+                $(this).addClass("wide");
+            } else {
+                $(this).addClass("tall");
+            }
+        });
+        $(".ImagesFrameCrop1").children("img").each(function() {
+            $(this).removeClass("wide")
+            $(this).removeClass("tall")
+            if ($(this).width() / $(this).height() > $(this).parent().width() / $(this).parent().height()) {
+                $(this).addClass("wide");
+            } else {
+                $(this).addClass("tall");
+            }
+        });
+
+        $(".ImagesFrameCrop0").each(function() {
+            $(this).removeClass("wide")
+            $(this).removeClass("tall")
+            if ($(this).width() / $(this).height() > $(this).parent().width() / $(this).parent().height()) {
+                $(this).addClass("wide");
+            } else {
+                $(this).addClass("tall");
+            }
+        });
+        $(".ImagesFrameCrop0").children("img").each(function() {
+            $(this).removeClass("wide")
+            $(this).removeClass("tall")
+            if ($(this).width() / $(this).height() > $(this).parent().width() / $(this).parent().height()) {
+                $(this).addClass("wide");
+            } else {
+                $(this).addClass("tall");
+            }
+        });
+    }
+    loadImages();
+    </script>
+</body>
+
+</html>

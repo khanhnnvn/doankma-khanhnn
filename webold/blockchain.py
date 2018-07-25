@@ -17,7 +17,7 @@ def index():
 def login():
     username = request.form["username"]
     password = request.form["password"]
-    if username == "admin" and password == "admin":
+    if username == "admin" and password == "admin2018":
         return render_template("chuc_nang.html")
     return redirect('/')
 

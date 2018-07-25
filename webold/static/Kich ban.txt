@@ -1,0 +1,4 @@
+- Đăng nhập: Fix 1 user admin/admin để thực hiện đăng nhập, không cần DB
+- Đăng nhập xong vào trang: chuc_nang.html
+- Chọn Tạo hồ sơ vay: tao_ho_so_vay.html
+- Tìm kiểm hồ sơ vay/ Cập nhật hồ sơ vay: Đều truyền user và cmt
