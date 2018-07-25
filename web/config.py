@@ -9,7 +9,7 @@ URL_CREATE_LOANS = "http://api-kma.khanhnn.com/invoke/createLoansDocument"
 
 URL_CHANGE_PROFILE_STATUS = "http://api-kma.khanhnn.com/invoke/changeProfileStatus"
 
-ACCOUNT_USER = "khanhnnvn@gmail.com"
+ACCOUNT_USER = "khaitranvan@gmail.com"
 CHANNEL_NAME = "mychannel"
 CHAINCODEID = "fabbank"
 URL_PEER = "grpc://localhost:7051"
